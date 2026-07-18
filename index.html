@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VOGUE | Специальный выпуск</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-$END$
+
+<!-- ==========================================
+     ОБЛОЖКА
+     ========================================== -->
+<section class="cover-page">
+    <div class="cover-overlay">
+        <div class="vogue-badge">VOGUE</div>
+        <div class="cover-date">SPECIAL EDITION · ИЮЛЬ 2026</div>
+        <h1 class="cover-title">
+            <span class="title-line">ЕЁ</span>
+            <span class="title-line">ИСТОРИЯ</span>
+        </h1>
+        <div class="cover-subtitle">ЛИЧНЫЙ ВЫПУСК</div>
+        <div class="cover-name" id="coverName">[ИМЯ ПОДРУГИ]</div>
+        <div class="cover-line"></div>
+        <div class="cover-tagline">ФОТОГРАФ: ТВОЙ ЛУЧШИЙ ДРУГ</div>
+    </div>
+    <img id="coverImage" class="cover-bg" src="" alt="Обложка Vogue" />
+</section>
+
+<!-- ==========================================
+     ЖУРНАЛ
+     ========================================== -->
+<div class="magazine-content">
+
+    <header class="magazine-header">
+        <div class="header-left">VOGUE</div>
+        <div class="header-center">СПЕЦИАЛЬНЫЙ ВЫПУСК</div>
+        <div class="header-right">ИЮЛЬ 2026</div>
+    </header>
+
+    <section class="intro-quote">
+        <blockquote>«Стиль — это способ рассказать о себе,<br />не говоря ни слова»</blockquote>
+        <p class="intro-text">Каждый кадр — это частичка её мира. Личный выпуск.</p>
+    </section>
+
+    <!-- ===== ГАЛЕРЕЯ (плитка как в журнале) ===== -->
+    <section class="gallery-section">
+        <h2>✦ ГАЛЕРЕЯ ✦</h2>
+        <div class="gallery-masonry" id="galleryGrid"></div>
+        <div class="pagination">
+            <button id="prevPage" class="page-btn">‹</button>
+            <span id="pageInfo">1 / 1</span>
+            <button id="nextPage" class="page-btn">›</button>
+        </div>
+    </section>
+
+    <!-- ===== ВИДЕО ===== -->
+    <section class="video-section">
+        <h3>✦ ЗА КАДРОМ ✦</h3>
+        <div class="video-grid" id="videoGrid"></div>
+        <p class="video-caption">— Настоящая жизнь выглядит именно так —</p>
+    </section>
+
+    <footer class="magazine-footer">
+        <div class="footer-line"></div>
+        <div class="footer-text">
+            <span>VOGUE</span>
+            <span>✦</span>
+            <span>СДЕЛАНО С ЛЮБОВЬЮ</span>
+            <span>✦</span>
+            <span>2026</span>
+        </div>
+    </footer>
+</div>
+
+<!-- ===== МОДАЛЬНЫЙ СЛАЙДЕР ===== -->
+<div id="modal" class="modal">
+    <span id="modalClose" class="modal-close">&times;</span>
+    <button id="modalPrev" class="modal-nav modal-prev">‹</button>
+    <img id="modalImage" class="modal-content" />
+    <button id="modalNext" class="modal-nav modal-next">›</button>
+    <div id="modalCaption" class="modal-caption"></div>
+    <div id="modalCounter" class="modal-counter"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
