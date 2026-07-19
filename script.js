@@ -157,7 +157,7 @@ function renderGallery(page) {
                 // Бейдж "VIDEO"
                 const badge = document.createElement('div');
                 badge.className = 'video-badge';
-                badge.textContent = '🎬 VIDEO';
+                badge.textContent = '';
                 wrapper.appendChild(badge);
 
             } else {
