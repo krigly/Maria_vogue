@@ -131,6 +131,10 @@ function renderGallery(page) {
                 video.autoplay = true;
                 video.loop = true;
                 video.playsInline = true;
+                video.preload = 'metadata';
+                video.setAttribute('playsinline', '');        // ← добавить
+                video.setAttribute('webkit-playsinline', ''); // ← добавить
+                video.setAttribute('muted', '');              // ← добавить (иногда JS-свойство не срабатывает до вставки в DOM)
                 video.className = 'gallery-video';
                 video.dataset.index = start + index;
 
