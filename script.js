@@ -2,7 +2,7 @@
 // 1. НАСТРОЙКИ
 // ============================================
 
-const friendName = 'АННА';
+const friendName = 'MARIA';
 
 const imageFiles = [
     'cover.jpg',
@@ -20,18 +20,7 @@ const imageFiles = [
     'photo12.jpg',
     'photo13.jpg',
     'photo14.jpg',
-    'photo15.jpg',
-    'photo16.jpg',
-    'photo17.jpg',
-    'photo18.jpg',
-    'photo19.jpg',
-    'photo20.jpg',
-    'photo21.jpg',
-    'photo22.jpg',
-    'photo23.jpg',
-    'photo24.jpg',
-    'photo25.jpg',
-    'photo26.jpg',
+
 ];
 
 const videoFiles = [
@@ -48,8 +37,6 @@ const videoFiles = [
     'video11.mp4',
     'video12.mp4',
     'video13.mp4',
-    'video14.mp4',
-    'video15.mp4',
 
     // 👇 ДОБАВЛЯЙ НОВЫЕ ВИДЕО СЮДА
 ];
